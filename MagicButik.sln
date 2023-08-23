@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalApi_Coupon", "MinimalApi_Coupon\MinimalApi_Coupon.csproj", "{27D721E9-C331-4688-8FD4-0DE230551651}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web-Coupon", "Web-Coupon\Web-Coupon.csproj", "{510A8A92-320D-48E2-AD87-089B5301911E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27D721E9-C331-4688-8FD4-0DE230551651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27D721E9-C331-4688-8FD4-0DE230551651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27D721E9-C331-4688-8FD4-0DE230551651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27D721E9-C331-4688-8FD4-0DE230551651}.Release|Any CPU.Build.0 = Release|Any CPU
+		{510A8A92-320D-48E2-AD87-089B5301911E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{510A8A92-320D-48E2-AD87-089B5301911E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{510A8A92-320D-48E2-AD87-089B5301911E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{510A8A92-320D-48E2-AD87-089B5301911E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {762AEC49-BC84-4E2A-8562-EE21995E249F}
+	EndGlobalSection
+EndGlobal
