@@ -1,3 +1,5 @@
+using Web_Coupon.Services;
+
 namespace Web_Coupon
 {
     public class Program
@@ -8,6 +10,10 @@ namespace Web_Coupon
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddHttpClient<ICouponService, CouponService>();
+            builder.Services.AddScoped<ICouponService, CouponService>();
+
+            StaticDetails.CouponApiBase = builder.Configuration["ServiceUrls:SUT22CouponAPI"];
 
             var app = builder.Build();
 

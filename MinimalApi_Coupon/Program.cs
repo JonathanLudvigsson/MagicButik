@@ -24,8 +24,8 @@ namespace MinimalApi_Coupon
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            builder.Services.AddValidatorsFromAssemblyContaining<CouponCreateDTO>();
-            builder.Services.AddAutoMapper(typeof(Program).Assembly);
+            builder.Services.AddValidatorsFromAssemblyContaining<CouponCreateValidation>();
+            builder.Services.AddAutoMapper(typeof(MappingConfig).Assembly);
 
             var app = builder.Build();
 
@@ -40,7 +40,7 @@ namespace MinimalApi_Coupon
 
             app.UseAuthorization();
 
-            app.MapGet("/api/coupons", () =>
+            app.MapGet("/api/coupon", () =>
             {
                 APIResponse response = new APIResponse();
 
@@ -165,7 +165,7 @@ namespace MinimalApi_Coupon
                 response.ErrorMessages.Add("Invalid ID");
                 return Results.BadRequest(response);
 
-            }).WithName("CouponDelete");
+            }).WithName("DeleteCoupon");
 
             app.Run();
         }
